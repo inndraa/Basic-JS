@@ -517,24 +517,24 @@
 
 // Task 60
 // let i = 1;
-// while( i <= 50){
+// while (i <= 50) {
 //     document.write(i + '<br>');
 //     i++;
 // }
-// for(let i = 1; i <= 50; i++){
+// for (let i = 1; i <= 50; i++) {
 //     document.write(i + '<br>')
 // }
 
 // Task 61
 // let arr = ['1', '2', '3', '4', '5'];
-// for(let i = 0; i < arr.length; i++){
-//     document.write(arr[i] + '<br>');      
+// for (let i = 0; i < arr.length; i++) {
+//     document.write(arr[i] + '<br>');
 // }
 
 // Task 62
 // let result = 1;
 // let arr = ['2', '3', '4', '5'];
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     result = result * arr[i];
 //     // result *= arr[i];
 // }
@@ -543,10 +543,10 @@
 // Task 63
 // let obj = {
 //     'Минск': 'Беларусь',
-// 	'Москва': 'Россия',
-// 	'Киев': 'Украина'
+//     'Москва': 'Россия',
+//     'Киев': 'Украина'
 // };
-// for(let key in obj){
+// for (let key in obj) {
 //     alert(key + ' - is ' + obj[key]);
 // }
 
@@ -556,30 +556,30 @@
 //     document.write(i + '<br>');
 //     i++;
 // }
-// for(let i = 1; i <= 100; i++){
+// for (let i = 1; i <= 100; i++) {
 //     document.write(i + '<br>');
 // }
 
 // Task 65
 // let i = 11;
-// while(i <= 33){
+// while (i <= 33) {
 //     document.write(i + '<br>');
 //     i++;
 // }
-// for(let i = 11; i <= 33; i++){
+// for (let i = 11; i <= 33; i++) {
 //     document.write(i + '<br>');
 // }
 
 // Task 66
-// for(let i = 2; i <=100; i++){
-//     if( i % 2 == 0){
+// for (let i = 2; i <= 100; i++) {
+//     if (i % 2 == 0) {
 //         document.write(i + '<br>');
 //     }
 // }
 // let i = 1;
-// while(i <= 100){
-//     if( i % 2 == 0){
-//         document.write(i + '<br>');      
+// while (i <= 100) {
+//     if (i % 2 == 0) {
+//         document.write(i + '<br>');
 //     }
 //     i++;
 // }
@@ -592,21 +592,21 @@
 // }
 // let sum = 0;
 // let i = 1;
-// while(i <= 100){
+// while (i <= 100) {
 //     sum += i;
 //     document.write(sum += i);
 // }
 
 // Task 68
 // let arr = [1, 2, 3, 4, 5];
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     document.write(arr[i]);
 // }
 
 // Task 69
 // let arr = [1, 2, 3, 4, 5];
 // let sum = 0;
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     sum += arr[i];
 //     alert(sum);
 // }
@@ -617,7 +617,7 @@
 //     red: 'красный',
 //     blue: 'синий'
 // }
-// for(let key in obj){
+// for (let key in obj) {
 //     document.write(obj[key] + ' ');
 // }
 
@@ -635,8 +635,8 @@
 
 // Task 72
 // let arr = [2, 5, 9, 15, 0, 4];
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i] > 3 && arr[i] < 10){
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 3 && arr[i] < 10) {
 //         alert(arr[i]);
 //     }
 // }
@@ -644,8 +644,8 @@
 // Task 73
 // let arr = [2, 5, 7, -7, 74, -3,];
 // let sum = 0;
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i] > 0){
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
 //         sum += arr[i];
 //     }
 //     alert(sum);
@@ -660,12 +660,61 @@
 //     }
 // }
 
-// Task 75 
+// Task 75
 // let arr = [30, 20, 30, 50, 235, 3000];
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     let num = String(arr[i]);
 //     let char = num[0];
-//     if(char == 1 || char == 2 || char == 5){
+//     if (char == 1 || char == 2 || char == 5) {
 //         alert('Good')
 //     }
-// }   
+// }
+
+// Task 76
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for(let i = 0; i < arr.length; i++){
+//     document.write(
+//         '-' + arr[i]
+//     )
+// }
+// document.write('-');
+
+// Task 77
+// let arr = [
+//     'Monday',
+//     'Tuesday',
+//     'Wednesday',
+//     'Thursday',
+//     'Friday',
+//     'Saturday',
+//     'Sunday'
+// ]
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] == 'Saturday' || (arr[i] == 'Sunday')){
+//        arr[i] = '<b>' + arr[i] + '</b>'
+//     }
+//     document.write(
+//         arr[i] + '<br>'
+//     )
+// }
+
+// Task 78
+let arr = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday'
+]
+let date = new Date();
+let day = date.getDate();
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] == date){
+       '<br>' + arr[i] + '</b>' 
+    }
+    document.write(
+        arr[i] + '<br>'
+    )
+}
