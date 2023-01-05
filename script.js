@@ -699,22 +699,140 @@
 // }
 
 // Task 78
-let arr = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday'
-]
-let date = new Date();
-let day = date.getDate();
-for(let i = 0; i < arr.length; i++){
-    if(arr[i] == date){
-       '<br>' + arr[i] + '</b>' 
-    }
-    document.write(
-        arr[i] + '<br>'
-    )
-}
+// let arr = [
+//     'Monday',
+//     'Tuesday',
+//     'Wednesday',
+//     'Thursday',
+//     'Friday',
+//     'Saturday',
+//     'Sunday'
+// ]
+// let date = new Date();
+// let day = date.toLocaleString('en-us',
+//     { weekday: 'long' }
+// );
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == day) {
+//         arr[i] = '<b>' + arr[i] + '</b>'
+//     }
+//     document.write(
+//         arr[i] + '<br>'
+//     )
+// }
+
+// Task 79
+// for (let n = 1000, num = 0; n > 50; num++) {
+//     n /= 2;
+//     alert(n);
+// }
+
+// Task 80
+// let a = 10;
+// let b = 3;
+// alert(
+//     a % b
+// );
+
+// Task 81
+// let a = 132411111;
+// let b = 2213411111342;
+// let res = a % b;
+// if (res) {
+//     alert(
+//         'Good ' + res
+//     )
+// } else{
+//     alert('Wrong')
+// }
+
+// Task 82
+// let st = Math.pow(2, 3);
+// alert(st)
+
+// Task 83
+// let a = Math.sqrt(245);
+// alert(a)
+
+// Task 84
+// let arr = [4, 2, 5, 19, 13, 0, 10];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//     sum += Math.pow(arr[i], 3);
+// }
+// alert(sum)
+
+// Task 85
+// let a = 379;
+// let b = Math.sqrt(a);
+// alert(
+//     a.toPrecision(2)
+// )
+// alert(
+//     a.toPrecision(3)
+// )
+// alert(
+//     a.toPrecision(4)
+// )
+
+// Task 86
+// let a = Math.sqrt(587);
+// let obj = {
+//     'floor': 1,
+//     'ceil': 2
+// }
+// let ceil = Math.ceil(a);
+// let floor = Math.floor(a);
+// for(let key in obj){
+//     obj.floor = floor;
+//     obj.ceil = ceil;
+// }
+
+// Task 87
+// let arr = [4, -2, 5, 19, -130, 0, 10];
+// let resMax = Math.max.apply(null, arr);
+// let resMin = Math.min.apply(null, arr);
+// alert(resMin)
+
+// Task 88
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// document.write(getRandomInt(1, 100))
+
+// Task 89
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//     arr[i] = (Math.random() * (100 - 1 + 1)) + 1
+// }
+// alert(arr)
+
+// Task 90
+// let a = -11;
+// let b = -234;
+// let sum = Math.abs(a)
+// alert(sum)
+
+// Task 90
+// let a = -456;
+// let b = -2;
+// let decrease = Math.abs(a - b);
+// let c = decrease;
+// alert(c)
+
+// Task 91
+// let arr = [12, 15, 20, 25, 59, 79];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+// alert(sum / arr.length);
+
+// Task 92
+// let num = 4;
+// let fact = 1;
+// for(let i = 1; i < num; i++){
+//     fact *= i;
+// }
+// alert(fact)
