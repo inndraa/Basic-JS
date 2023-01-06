@@ -672,7 +672,7 @@
 
 // Task 76
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     document.write(
 //         '-' + arr[i]
 //     )
@@ -689,9 +689,9 @@
 //     'Saturday',
 //     'Sunday'
 // ]
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i] == 'Saturday' || (arr[i] == 'Sunday')){
-//        arr[i] = '<b>' + arr[i] + '</b>'
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == 'Saturday' || (arr[i] == 'Sunday')) {
+//         arr[i] = '<b>' + arr[i] + '</b>'
 //     }
 //     document.write(
 //         arr[i] + '<br>'
@@ -743,7 +743,7 @@
 //     alert(
 //         'Good ' + res
 //     )
-// } else{
+// } else {
 //     alert('Wrong')
 // }
 
@@ -758,7 +758,7 @@
 // Task 84
 // let arr = [4, 2, 5, 19, 13, 0, 10];
 // let sum = 0;
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     sum += Math.pow(arr[i], 3);
 // }
 // alert(sum)
@@ -784,7 +784,7 @@
 // }
 // let ceil = Math.ceil(a);
 // let floor = Math.floor(a);
-// for(let key in obj){
+// for (let key in obj) {
 //     obj.floor = floor;
 //     obj.ceil = ceil;
 // }
@@ -832,7 +832,68 @@
 // Task 92
 // let num = 4;
 // let fact = 1;
-// for(let i = 1; i < num; i++){
+// for (let i = 1; i < num; i++) {
 //     fact *= i;
 // }
 // alert(fact)
+
+// Task 93
+// let str = 'a@@@@aa@bbb@ccc';
+// alert(
+//     str.replace(/@/g, '!')
+// )
+
+// Task 94
+// let str = 'aaa bbb ccc';
+// alert(str.substr(4, 3));
+// alert(str.substring(4, 7));
+// alert(str.slice(4, 7));
+
+// 95
+// let str = 'js';
+// alert(
+//     str.toUpperCase()
+// )
+
+// Task 96
+// let str = 'JS';
+// alert(
+//     str.toLowerCase()
+// )
+
+// Task 97
+// let str = 'im learning js';
+// alert(str.length)
+
+// Task 98
+// let str = 'im learning js';
+// alert(
+//     str.substr(3, 12)
+// )
+// alert(
+//     str.substring(3, 14)
+// )
+// alert(
+//     str.slice(3, 14)
+// )
+
+// Task 99
+// let str = 'im learning js';
+// alert(
+//     str.indexOf('learning')
+// )
+
+// Task 100
+// let str = 'adsasdfsdfsdgsdgdfgdfg';
+// let n = 7;
+// let result = str.slice(0, n)  + '...';
+
+// if(str => n){
+//     alert(result) 
+// }
+
+// Task 101
+// let str = 'Я-учу-javascript!'
+// alert(
+//     str.replace(/-/g, '!')
+// )
