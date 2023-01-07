@@ -897,3 +897,101 @@
 // alert(
 //     str.replace(/-/g, '!')
 // )
+
+// Task 102
+// let str = 'im learning js';
+// alert(str.split(' '))
+
+// Task 103
+// let str = 'im learning js';
+// alert(str.split(''))
+
+// Task 104
+// let date = '2022-13-6';
+// let split = date.split('-');
+// alert(split[0] + '.' + split[1] + '.' + split[2]);
+
+// Task 105
+// let arr = ['я', 'учу', 'javascript', '!'];
+// let str = arr.join('+');
+// alert(str)
+
+// Task 106
+// let str = "fsadfasdf";
+// alert(
+//     str[0].toUpperCase()
+// )
+
+// Task 107
+// let str = 'sdfgdfgsdg';
+// let str2 = 'mhjkghjkhj';
+// let str3 = 'wrtyrtyry';
+// alert(str.replace('s', 'S'));
+// alert(str2.replace('m', 'M'));
+// alert(str3.replace('w', 'W'));
+
+// Task 108
+// let str = 'var_test_text';
+// let res = str.split('_');
+// for(let i = 0; i < res.length; i++){
+//     res[i] = res[i].slice(0, 1).toUpperCase() + res.slice(1);
+
+// };
+
+// let new1 = res.join('');
+// alert(new1)
+
+// Task 109
+// let a = [1, 2, 3];
+// let b =  [4, 5, 6];
+// alert(
+//     a.concat(b)
+// )
+
+// Task 110
+// let a = [1, 2, 3];
+// alert(
+//     a.reverse()
+// )
+
+// Task 111
+// let arr = [1, 2, 3];
+// arr.push(4, 5, 6);
+// alert(arr);
+
+// Task 112
+// let arr = [1, 2, 3];
+// arr.unshift(4, 5, 6);
+// alert(arr)
+
+// Task 113
+// let arr = ['js', 'css', 'jq'];
+// let get = arr.shift();
+// alert(get)
+
+// Task 114
+// let arr = ['js', 'css', 'jq'];
+// let get = arr.pop();
+// alert(get)
+
+// Task 115
+// let arr = [1, 2, 3, 4, 5];
+// let be = arr.slice(0, 3);
+// alert(be)
+
+// Task 116
+// let arr = [1, 2, 3, 4, 5];
+// let be = arr.slice(2, 5);
+// alert(be)
+
+// Task 117
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 2);
+// alert(arr)
+
+// Task 118
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 3);
+// alert(arr)
+
+// Task 119
