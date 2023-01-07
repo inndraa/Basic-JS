@@ -995,3 +995,47 @@
 // alert(arr)
 
 // Task 119
+// let arr = [3, 4, 1, 2, 7];
+// arr.sort();
+// alert(arr)
+
+// Task 120
+// let obj = { js: 'test', jq: 'hello', css: 'world' }
+// alert(Object.keys(obj))
+
+// Task 121
+// let str = 'dfgdfgdf';
+// str = str[0].toUpperCase() + str.substring(1);
+// alert(str);
+
+// Task 122
+// let str = 'dfgsdfg';
+// str = str.split('');
+// str[0] = str[0].toUpperCase();
+// let result = str.join('')
+// alert(result)
+
+// Task 123
+// let str = "123456";
+// let res = str.split('').reverse().join('');
+// alert(
+//     res
+// )
+
+// Task 124
+// let str = 'http://google.com';
+// if(str.substring(0, 7) ==  'http://'){
+//     alert(str)
+// } else{
+//     alert('No http://')
+// }
+
+// Task 125
+// let str = 'dog.html';
+// if(str.substr(-5) == '.html'){
+//     alert('good');
+// } else{ 
+//     alert('wr')
+// }
+
+// Task 126
