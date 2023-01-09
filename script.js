@@ -1039,3 +1039,186 @@
 // }
 
 // Task 126
+// function cube(num) {
+//     return num * num * num
+// }
+// alert(cube(11))
+
+// Task 127
+// function sum(num, num2) {
+//     return num + num2
+// }
+// alert(sum(11,323))
+
+// Task 128
+// function sum(num, num2, num3) {
+//     return (num - num2) / num3;
+// }
+// alert(sum(11, 22, 1))
+
+// Task 129
+// function getDay(num) {
+//     if (num == 1) {
+//         alert('Monday')
+//     }
+//     if (num == 2) {
+//         alert('Tuesday')
+//     }
+//     if (num == 3) {
+//         alert('Wednesday')
+//     }
+//     if (num == 4) {
+//         alert('Thursday')
+//     }
+//     if (num == 5) {
+//         alert('Friday')
+//     }
+//     if (num == 6) {
+//         alert('Saturday')
+//     }
+//     if (num == 7) {
+//         alert('Sunday')
+//     }
+// }
+// getDay(7)
+
+// Task 130
+// let arr = [1, 2, 3, 4, 5];
+// let flag = false;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == 5) {
+//         flag = true;
+//         break;
+//     }
+// }
+// if (flag === true) {
+//     alert('Есть');
+// } else {
+//     alert('Нет');
+// }
+
+// Task 131
+// let number = 31;
+// let flag = false;
+// for(let i = 2; i < number; i++){
+//     if(number % i == 0){
+//         flag = true;
+//         break;
+//     }
+// }
+// if(flag === true){
+//     alert('Go')
+// } else{
+//     alert('Error')
+// }
+
+// Task 132
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let flag = false;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == arr[i - 1]) {
+//         flag = true;
+//         break;
+//     }
+// }
+// if (flag === true) {
+//     alert('Есть')
+// } else {
+//     alert('Нет')
+// }
+
+// Task 133
+// function go(num1, num2){
+//     let flag = false;
+//     if(num1 == num2){
+//         flag = true;
+//     }
+//     if(flag == true){
+//         alert(flag)
+//     } else{
+//         alert(flag)
+//     }
+// }
+// go(11,11)
+
+// Task 134
+// function go(num1, num2){
+//     let flag = false;
+//     if(num1 + num2 >= 10){
+//         flag = true;
+//     }
+//     if(flag == true){
+//         alert(flag)
+//     } else{
+//         alert(flag)
+//     }
+// }
+// go(1,9)
+
+// Task 135
+// function go(num1){
+//     let flag = false;
+//     if(num1 < 0){
+//         flag = true;
+//     }
+//     if(flag == true){
+//         alert(flag)
+//     } else{
+//         alert(flag)
+//     }
+// }
+// go(-1)
+
+// Task 136
+// let str = '';
+// for (let i = 1; i <= 9; i++) {
+//     str = str + i;
+//     alert(str);
+// }
+
+// Task 137
+// let str = '';
+// for (let i = 1; i <= 10; i++) {
+//     str = str + 'x'
+// }
+// alert(str);
+
+// Task 138
+// let str = '';
+// for (let i = 1; i <= 9; i++) {
+//     str = str + i;
+// }
+// let strSpl = str.split('');
+// strSpl.reverse();
+// let strJ = strSpl.join('');
+// alert(strJ)
+
+// Task 139
+// let str = ''
+// for(let i = 1; i <= 9; i++){
+//     str = str + i + '-';
+// }   
+// alert(str)  
+
+// Task 140
+// let str = '';
+// for(let i = 1; i <= 20; i++){
+//     str = str + 'x';
+//     document.write(str + '<br>')
+// }
+
+// Task 141
+// for (let i = 1; i <= 9; i++) {
+//     for (let j = 1; j <= i; j++) {
+//         document.write(i);
+//     }
+//     document.write('<br >')
+// }
+
+// Task 142
+// let str = '';
+// for(let i = 1; i <= 10; i++){
+//     str = str + 'xx';
+//     document.write(str + '<br>')
+// }
+
