@@ -1222,3 +1222,94 @@
 //     document.write(str + '<br>')
 // }
 
+// Task 143
+// let arr = [];
+// let str = '';
+// for (let i = 1; i <= 10; i++) {
+//     arr.push(str);
+//     str += 'x';
+// }
+// document.write(arr)
+
+// Task 144
+// let arr = [];
+// for(let i = 1; i < 10; i++){
+//     let str = '';
+//     for(let j = 0; j < i; j++){
+//         str += i;
+//     }
+//     arr.push(str);
+// }
+// document.write(arr);
+
+// Task 145
+// function arrayFill(word, num) {
+//     let arr = [];
+//     for (let i = 0; i <= num; i++) {
+//         arr.push(word);
+//     }
+//     return arr;
+// }
+
+// document.write(arrayFill('b', 111));
+
+// Task 146
+// function go(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//         if(sum > 10){
+//             return i + 1
+//         }
+//     }
+// }
+// console.log(go([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// Task 147
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let res = [];
+// for(let i = arr.length; i >= 1; i--){
+//     res.push(i)
+// }   
+// alert(res)
+
+// Task 148
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         sum += arr[i][j];
+//     }
+// }
+// alert(sum);
+
+// Task 149
+// let arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         for (let k = 0; k < arr[j].length; k++) {
+//             sum += arr[i][j][k];
+//         }
+//     }
+// }
+// alert(sum)
+
+// Task 150
+// let arr = [1, 2, 3, -1, -2, -3];
+// let res = [];
+// function isPositive(num) {
+//     if (num > 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// for (let i = 0; i <= arr.length; i++) {
+//     if (isPositive(arr[i])){
+//         res.push(arr[i]);
+//     }
+// }
+// alert(res)
+
+// Task 151
