@@ -1313,3 +1313,132 @@
 // alert(res)
 
 // Task 151
+// function isNumberInRange(num){
+//     if(num > 0 && num < 10){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+// alert(isNumberInRange(1))
+
+// Task 152
+// function isNumberInRange(num){
+//     if(num > 0 && num < 10){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+// let arr = [223, 41, 3, 65, 3, 7, 9, 0];
+// let res = [];
+// for(let i = 0; i < 10; i++){
+//     if(isNumberInRange(arr[i])){
+//         res.push(arr[i]);
+//     }
+
+// }
+// document.write(res)
+
+// Task 153
+// function getDigitsSum(digit){
+//     return digit + digit;
+// }
+// alert(getDigitsSum(411))
+
+// Task 154
+// function getDigitsSum(digit) {
+//     let result = String(digit);
+//     let digitSum = 0;
+//     for(let i = 0; i < result.length; i++){
+//         digitSum += Number(result[i]);
+//     }
+//     return digitSum;
+// }
+// let result = [];
+// for (let i = 1; i <= 2023; i++) {
+//     if (getDigitsSum(i) == 13) {
+//         result.push(i)
+//     }
+// }
+// document.write(result);
+
+// Task 155
+// function isEven(number){
+//     if(number % 2 == 0){
+//         alert('Even');
+//     } else{
+//         alert('Odd')
+//     }
+// }
+// isEven(12);
+
+// Task 156
+// function isEven(number) {
+//     return number % 2 == 0;
+// }
+// let arr = [23, 42, 4, 34, 432, 4, 560, 6, 1, 789, 6, 2, 4];
+// let result = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (isEven(arr[i])) {
+//         result.push(arr[i])
+//     }
+// }
+// document.write(result)
+
+// Task 157
+// function getDivisors(num){
+//     let result = [];
+//     for(let i = 1; i < num; i++){
+//         if(num % i == 0){
+//             result.push(i)
+//         }
+//     }   
+//     return result;
+// }
+// document.write(getDivisors(1000));
+
+// Task 158
+// function ucfirst(str){
+//     return str[0].toUpperCase() + str.substr(1, str.length)
+// }
+// alert(ucfirst('fsddf'));
+
+// Task 159
+// function ucfirst(str) {
+//     return str[0].toUpperCase() + str.substr(1, str.length)
+// }
+// let str = 'var_text_hello';
+// let arr = str.split('_');
+// for (let i = 1; i < arr.length; i++) {
+//     arr[i] = ucfirst(arr[i]);
+// }
+// str = arr.join('');
+// alert(str);
+
+// Task 160
+// function inArray(text, arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (text === arr[i]) {
+//             return true;
+//         } else {
+            
+//         };   
+//     } return false;
+// } 
+// alert(
+//     inArray('fghsfgh', ['Go', 'Good', 'Bad', 'abc', 'ab'])
+// )
+
+// Task 161
+// let str = '123456';
+// let arr = str.split('');
+// for(let i = 0; i < arr.length; i++){
+//     if(i % 2 !== 0){
+//         let b = arr[i - 1]
+//         arr[i - 1] = arr[i]
+//         arr[i] = b;
+//     }
+// }
+// str = arr.join('');
+// alert(str)
