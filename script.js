@@ -1422,7 +1422,7 @@
 //         if (text === arr[i]) {
 //             return true;
 //         } else {
-            
+
 //         };   
 //     } return false;
 // } 
@@ -1442,3 +1442,118 @@
 // }
 // str = arr.join('');
 // alert(str)
+
+// Task 162
+// let arr = [2, 4, 4, 4, 67, 3, 7,];
+// function doIt() {
+//     document.write(arr[0] + '<br>')
+//     arr.shift()
+//     if (arr.length > 0) {
+//         doIt(arr)
+//     }
+// }
+// doIt()
+
+// Task 163
+// function calc(num) {
+//     let result = (num + '').split('').map(function (item) {
+//         return item * 1;
+//     }).reduce(function (sum, item) {
+//         return sum + item;
+//     });
+//     num = result;
+//     if (result > 9) {
+//         return calc(num);
+//     }
+// }
+// alert(calc(2))
+
+// Task 164
+// for (let i = 1; i <= 100; i++) {
+//     document.write(i + '<br>')
+// }
+
+// Task 165
+// for (let i = 100; i > 0; i--) {
+//     document.write(i + '<br>')
+// }
+
+// Task 166
+// for(let i = 1; i <= 100; i++){
+//     if(i % 2 == 0){y
+//         document.write(i + '<br>')
+//     }
+// }
+
+// Task 167
+// let arr = [];
+// for(let i = 0; i < 10; i++){
+//     arr[i] = 'x'
+
+// }
+// document.write(arr);
+
+// Task 168
+// let arr = [];
+// for(let i = 1; i <= 10; i++){
+//     arr.push(i)
+// }
+// document.write(arr)
+
+// Task 169
+// let arr = [];
+// for (let i = 0; i < 10; i++) {
+//     arr.push(
+//         Math.random().toFixed(2)
+//     )
+// }
+// alert(arr)
+
+// Task 170
+// let arr = []
+// for (let i = 0; i <= 10; i++) {
+//     arr[i] = (Math.round(Math.random() * 10) + 1);
+// }
+// document.write(arr)
+
+// Task 171
+// let arr = [7,4,4,5,9,5,4,11,5,11,6];
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > 0 && arr[i] < 10){
+//         document.write(arr[i] + '<br>')
+//     }
+// }
+
+// Task 172
+// let arr = [7, 4, 4, 5, 9, 5, 4, 11, 5, 11, 6];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == 5) {
+//         document.write('true')
+//         break;
+//     }
+// }
+
+// Task 173
+// let arr = [7, 4, 4, 5, 9, 5, 4, 11, 5, 11, 6];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//     sum += arr[i];
+// }
+// alert(sum)
+
+// Task 174
+// let arr = [7, 4, 4, 5, 9, 5, 4, 11, 5, 11, 6];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//     sum += arr[i] * arr[i]
+// }
+// alert(sum)
+
+// Task 175
+// let arr = [2, 4, 4, 5, 9, 5, 4, 11, 5, 11, 6];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//     result = sum / arr.length;
+// }
+// alert(result)
