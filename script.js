@@ -1557,3 +1557,68 @@
 //     result = sum / arr.length;
 // }
 // alert(result)
+
+// ------------DOM--------------
+
+// Task 176
+// let button = document.querySelector('.btn');
+// button.onclick = go;
+// function go(){
+//     alert('Go')   
+// }
+
+// Task 177
+// let btn = document.querySelector('. btn');
+// btn.onmouseover = go;
+// function go(){
+//     alert('hoooo')
+// }
+
+// Task 178
+// let btn = document.querySelector('.btn');
+// btn.ondblclick = go;
+// function go(){
+//     alert('aaa');
+// }
+
+// Task 179
+// let block = document.querySelector('.block');
+// block.onmouseout = go;
+// function go(){
+//     alert('Go')
+// }
+
+// Task 180
+// let btn = document.querySelector('.click');
+// let inp = document.querySelector('.input');
+// btn.onclick = func;
+// function func(){
+//     alert(inp.value)
+// }
+
+// Task 181
+// let btn = document.querySelector('.click');
+// let inp = document.querySelector('.input');
+// btn.onclick = func;
+// function func(){
+//     inp.value = '343423';
+// }
+
+// Task 182
+// let btn = document.querySelector('.click');
+// let imageMain = document.querySelector('.imageMain');
+// let imageSec = document.querySelector('.imageSec');
+// btn.onclick = func;
+// function func() {
+//     imageMain.classList.add('hide');
+//     imageSec.classList.remove('hide');  
+// }
+
+// Task 183
+// let inp = document.querySelector('.input');
+// inp.onclick = func;
+// function func() {
+//     alert(inp.value)
+// }   
+
+// Task 184
