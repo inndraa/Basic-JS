@@ -889,7 +889,7 @@
 // let result = str.slice(0, n)  + '...';
 
 // if(str => n){
-//     alert(result) 
+//     alert(result)
 // }
 
 // Task 101
@@ -1034,7 +1034,7 @@
 // let str = 'dog.html';
 // if(str.substr(-5) == '.html'){
 //     alert('good');
-// } else{ 
+// } else{
 //     alert('wr')
 // }
 
@@ -1197,8 +1197,8 @@
 // let str = ''
 // for(let i = 1; i <= 9; i++){
 //     str = str + i + '-';
-// }   
-// alert(str)  
+// }
+// alert(str)
 
 // Task 140
 // let str = '';
@@ -1270,7 +1270,7 @@
 // let res = [];
 // for(let i = arr.length; i >= 1; i--){
 //     res.push(i)
-// }   
+// }
 // alert(res)
 
 // Task 148
@@ -1393,7 +1393,7 @@
 //         if(num % i == 0){
 //             result.push(i)
 //         }
-//     }   
+//     }
 //     return result;
 // }
 // document.write(getDivisors(1000));
@@ -1423,9 +1423,9 @@
 //             return true;
 //         } else {
 
-//         };   
+//         };
 //     } return false;
-// } 
+// }
 // alert(
 //     inArray('fghsfgh', ['Go', 'Good', 'Bad', 'abc', 'ab'])
 // )
@@ -1564,7 +1564,7 @@
 // let button = document.querySelector('.btn');
 // button.onclick = go;
 // function go(){
-//     alert('Go')   
+//     alert('Go')
 // }
 
 // Task 177
@@ -1611,7 +1611,7 @@
 // btn.onclick = func;
 // function func() {
 //     imageMain.classList.add('hide');
-//     imageSec.classList.remove('hide');  
+//     imageSec.classList.remove('hide');
 // }
 
 // Task 183
@@ -1619,7 +1619,7 @@
 // inp.onclick = func;
 // function func() {
 //     alert(inp.value)
-// }   
+// }
 
 
 
@@ -1739,7 +1739,7 @@
 
 // Task 18
 // Дана переменная с числом. Найдите количество цифр в этом числе.
-// let a = 2838922567652141    
+// let a = 2838922567652141
 // alert(String(a).length)
 
 // Task 19
@@ -1806,7 +1806,7 @@
 // Переделайте приведенный выше код так, чтобы суммировались числа, а не строки.
 // let num1 = prompt('Введите первое число');
 // let num2 = prompt('Введите второе число');
-// alert(Number(num1) + Number(num2)); 
+// alert(Number(num1) + Number(num2));
 
 // Task 31
 // С помощью функции prompt спросите у пользователя сторону квадрата. Выведите на экран площадь введенного квадрата.
@@ -1848,29 +1848,103 @@
 // let arr = [1, 2, 3, 4, 5];
 // let key1 = 1;
 // let key2 = 2;
-// alert(arr[key1] + arr[key2]) 
+// alert(arr[key1] + arr[key2])
 
 // Task 37
 // Удалите из него два элемента. Проверьте, какое станет значение свойства length после этого.
 // let arr = ['a', 'b', 'c', 'd', 'e'];
 // delete arr[4]
 // delete arr[0]
-// alert(arr.length - 1)  
+// alert(arr.length - 1)
 
 // Task 38
-// 
+// Создайте объект с ключами от 1 до 7, в качестве значений содержащий имена дней недели. Выведите на экран все его элементы.
+// let obj = {
+//     1: 'Monday',
+//     2: 'Tuesday',
+//     3: 'Wednesday',
+//     4: 'Thursday',
+//     5: 'Friday',
+//     6: 'Saturday',
+//     7: 'Sunday'
+// }
+// alert(obj[1] + obj[2] + obj[3] + obj[4] + obj[5] + obj[6] + obj[7])
 
 // Task 39
-//
+// Создайте объект с ключами от 1 до 12, в качестве значений содержащий названия месяцев. Выведите этот объект в консоль.
+// let obj = {
+//     1: 'January',
+//     2: 'February',
+//     3: 'March',
+//     4: 'April',
+//     5: 'May',
+//     6: 'June',
+//     7: 'July',
+//     8: 'August',
+//     9: 'September',
+//     10: 'November',
+//     11: 'October',
+//     12: 'December'
+// }
+// console.log(obj)
 
 // Task 40
-// 
+// Создайте объект user с ключами 'name', 'surname', 'patronymic' и какими-то произвольными значениями. Выведите на экран фамилию, имя и отчество через пробел.
+// let obj = {
+//     'name': 'Ivan',
+//     'surname': 'Me',
+//     'patronymic': 'none'
+// }
+// console.log(obj['surname'] + ' ' + obj['name'] + ' ' +  obj['patronymic'])
 
 // Task 41
-// 
+// Создайте объект date с ключами 'year', 'month' и 'day' и значениями, соответствующими текущему дню. Выведите созданную дату на экран в формате год-месяц-день.
+// let date = {
+//     year: 2023,
+//     month: 02,
+//     day: 02
+// }
+// console.log(date.year + '-' + date.month + '-' + date.day)
 
 // Task 42
-// 
+// Возведите в квадрат каждый элемент этого объекта.
+// let obj = {x: 1, y: 2, z: 3};
+// console.log('' + (obj.x * obj.x) + (obj.y * obj.y) + (obj.z * obj.z))
 
 // Task 43
-// 
+// Создайте пустой объект, а затем заполните его значениями.
+// let obj = {}
+// obj['first'] = 123
+// obj['seconds'] = 321
+// obj['third'] = 456
+// obj.a = 'hi'
+// obj.b = 'qq'
+// obj.c = 'aaa'
+// console.log(obj)
+
+// Task 45
+// Получите массив ключей следующего объекта
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(Object.keys(obj))
+
+// Task 46
+// Найдите количество элементов в следующем объекте:
+// let obj = {x: 1, y: 2, z: 3};
+// console.log(Object.keys(obj).length)
+
+// Task 47
+// Дана переменная key, в которой хранится один из ключей нашего объекта. Выведите с помощью этой переменной соответствующий элемент объекта.
+// let obj = {x: 1, y: 2, z: 3};
+// let key = 'z'
+// console.log(obj[key])
+
+// Task 48
+// В следующем коде ключ должен был взяться из переменной. Исправьте допущенную ошибку:
+// let key = 'x';
+// let obj = {
+// 	[key]: 1,
+// 	y: 2,
+// 	z: 3
+// };
+
+
