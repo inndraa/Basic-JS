@@ -1621,13 +1621,7 @@
 //     alert(inp.value)
 // }
 
-
-
-
 // ------- ADVANCED ---------
-
-
-
 
 // Task 1
 // Создайте переменную a.Запишите в нее сумму чисел 1, 2 и 3. С помощью функции alert выведите на экран содержимое переменной a.
@@ -2204,21 +2198,245 @@
 // С помощью этих массивов создайте новый объект, сделав его ключами элементы первого массива, а значениями - элементы второго.
 // let arr1 = [1, 2, 3, 4, 5];
 // let arr2 = [6, 7, 8, 9, 10];
-// for(let i = 0; i < arr1.length; i++){
-//     let arrItem = arr1[i]
-// }
-
 // let obj = {}
-// for(let key in obj){
-//     key += arrItem;
+// for (let i = 0; i < arr1.length; i++) {
+//     obj[arr1[i]] = arr2[i]
 // }
 // console.log(obj)
 
 // Task 80
 // Найдите сумму ключей этого объекта и поделите ее на сумму значений.
 // let obj = {1: 6, 2: 7, 3: 8, 4: 9, 5: 10};
+// let sumKey = 0;
+// let sumElem = 0
+// let res = 0;
+// for(let key in obj){
+//     sumKey += Number(key)
+//     sumElem += obj[key]
+//     res = sumKey / sumElem
+// }
+// console.log(res)
 
 // Task 81
 // Запишите ключи этого объекта в один массив, а значения - в другой.
 // let obj = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
+// let keyArr = []
+// let valArr = []
+// for(let key in obj){
+//     keyArr.push(key)
+//     valArr.push(obj[key])
+// }
+// console.log(keyArr + ' - ' + valArr)
 
+// Task 82
+// Запишите в новый массив элементы, значение которых начинается с цифры 1 или цифры 2. То есть у вас в результате получится вот такой массив: [125,225,128,145,281]
+// let obj = {
+//   1: 125,
+//   2: 225,
+//   3: 128,
+//   4: 356,
+//   5: 145,
+//   6: 281,
+//   7: 452,
+// };
+// let arr = [];
+// for(let key in obj){
+//     let objVal = String(obj[key])
+//     if(objVal[0] == '1' || objVal[0] == '2'){
+//         arr.push(Number(objVal))
+//     }
+// }
+// console.log(arr)
+
+// Task 83
+// Выведите с его помощью элементы с текстом 'l', 'e', 'g' и 'a'.
+// let arr = [
+// 	['a', 'b', 'c'],
+// 	['d', 'e', 'f'],
+// 	['g', 'h', 'i'],
+// 	['j', 'k', 'l'],
+// ];
+// console.log(arr[3][2] + arr[1][1] + arr[2][0] + arr[0][0])
+
+// Task 84
+// Обращаясь к каждому элементу массива найдите сумму всех его элементов.
+// let arr = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// arr = arr.flat(Infinity);
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// Task 85
+// Обращаясь к каждому элементу массива найдите сумму всех его элементов.
+// let arr = [
+//   [
+//     [1, 2],
+//     [3, 4],
+//   ],
+//   [
+//     [5, 6],
+//     [7, 8],
+//   ],
+// ];
+// arr = arr.flat(Infinity);
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum)
+
+// Task 86
+// let arr = [['a', 'b', [1, 2, 3], [4, 5]], ['d', ['e', 'f']]];
+// arr = arr.flat(Infinity)
+// console.log(arr)
+
+// Task 87
+// Вручную, без цикла, найдите сумму элементов этого массива.
+// let arr = [
+//   [1, 2, 3, [4, 5, [6, 7]]],[8, [9, 10]],
+// ];
+// arr = arr.flat(Infinity)
+// let sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9]
+// console.log(sum)
+
+// Task 88
+// С помощью вложенных циклов найдите сумму элементов этого массива.
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// let sum = 0
+// for (let subArr of arr) {
+//     for(let elem of subArr){
+//         sum += elem
+//     }
+// }
+// console.log(sum)
+
+// Task 89
+//С помощью вложенных циклов найдите сумму элементов этого массива.
+// let arr = [
+//   [
+//     [1, 2],
+//     [3, 4],
+//   ],
+//   [
+//     [5, 6],
+//     [7, 8],
+//   ],
+// ];
+// let sum = 0;
+// for(let subArr of arr){
+//     for(let elem of subArr){
+//         for(let item of elem){
+//             sum += item
+//         }
+//     }
+// }
+// console.log(sum)
+
+// Task 90
+// Решите предыдущие две задачи через цикл for.
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     sum += arr[i][j];
+//   }
+// }
+// console.log(sum);
+// let arr = [
+//   [
+//     [1, 2],
+//     [3, 4],
+//   ],
+//   [
+//     [5, 6],
+//     [7, 8],
+//   ],
+// ];
+// let sum = 0
+// for (let i = 0; i < arr.length; i++) {
+//     for(let j = 0; j < arr[i].length; j++){
+//         for(let k = 0; k < arr[j].length; k++){
+//             sum += arr[i][j][k]
+//         }
+//     }
+// }
+// console.log(sum)
+
+// Task 91
+// Сформируйте с помощью двух вложенных циклов следующий массив: [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
+// let arr = [];
+// for(let i =0; i < 3; i++){
+//     arr[i] = []
+//     for(let j = 0; j < 5; j++){
+//         arr[i].push(j + 1)
+//     }
+// }
+// console.log(arr)
+
+// Task 92
+// Сформируйте с помощью двух вложенных циклов следующий массив: [['x', 'x', 'x', 'x'],['x', 'x', 'x', 'x'],['x', 'x', 'x', 'x']]
+// let arr = [];
+// for (let i = 0; i < 3; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 4; j++) {
+//     arr[i].push('x');
+//   }
+// }
+// console.log(arr);
+
+// Task 93
+// Сформируйте с помощью трех вложенных циклов следующий массив: [[[1, 2, 3, 4, 5],[1, 2, 3, 4, 5],],[[1, 2, 3, 4, 5],[1, 2, 3, 4, 5],],[[1, 2, 3, 4, 5],[1, 2, 3, 4, 5]]]
+// let arr = []
+// for(let i = 0; i < 3; i++){
+//   arr[i] = [];
+//   for(let j = 0; j < 6; j++){
+//     arr[j] = []
+//     for(let k = 1; k <= 5; k++){
+//       arr[j].push(k)
+//     }
+//   }
+// }
+// console.log(arr)
+
+// Task 94
+// Сформируйте с помощью двух вложенных циклов следующий массив: [[1, 2], [3, 4], [5, 6], [7, 8]]
+// let arr = [];
+// for (let i = 0, k = 1; i < 4; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 2; j++) {
+//     arr[i].push(k++);
+//   }
+// }
+// console.log(arr);
+
+// Task 95
+// Сформируйте с помощью двух вложенных циклов следующий массив: [[2, 4, 6], [8, 10, 12], [14, 16, 18], [20, 22, 24]]
+// let arr = [];
+// for (let i = 0, k = 1; i < 4; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 6; j++) {
+//     k++;
+//     if(k % 2 == 0){
+//       arr[i].push(k);
+//     }
+//   }
+// }
+// console.log(arr);
+
+// Task 96
+// Сформируйте с помощью трех вложенных циклов следующий трехмерный массив: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+// let arr = [];
+// for (let i = 0, k = 0; i < 4; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 2; j++) {
+//     k++;
+//     arr[i].push(k);
+//   }
+// }
+// console.log(arr);
