@@ -2513,3 +2513,480 @@
 //   obj.key1["c"]["e"] +
 //   obj.key1["f"] + obj.key2['g'] + obj.key2['h']
 // console.log("sum", sum);
+
+// Task 100
+// Используя циклы, найдите сумму элементов этого объекта.
+// let obj = {
+//   1: {
+//     1: 11,
+//     2: 12,
+//     3: 13,
+//   },
+//   2: {
+//     1: 21,
+//     2: 22,
+//     3: 23,
+//   },
+//   3: {
+//     1: 24,
+//     2: 25,
+//     3: 26,
+//   },
+// };
+// let sum = 0;
+// for (let key in obj) {
+//   let subObj = obj[key];
+//   for (let subKey in subObj) {
+//     sum += subObj[subKey];
+//   }
+// }
+// console.log("sum", sum)
+
+// Task 101
+//  Используя циклы, найдите сумму элементов этого объекта.
+// let obj = {
+//   1: {
+//     1: {
+//       1: 111,
+//       2: 112,
+//       3: 113,
+//     },
+//     2: {
+//       1: 121,
+//       2: 122,
+//       3: 123,
+//     },
+//   },
+//   2: {
+//     1: {
+//       1: 211,
+//       2: 212,
+//       3: 213,
+//     },
+//     2: {
+//       1: 221,
+//       2: 222,
+//       3: 223,
+//     },
+//   },
+//   3: {
+//     1: {
+//       1: 311,
+//       2: 312,
+//       3: 313,
+//     },
+//     2: {
+//       1: 321,
+//       2: 322,
+//       3: 323,
+//     },
+//   },
+// };
+// let sum = 0;
+// for (let key in obj) {
+//   let subObj = obj[key];
+//   for (let subKey in subObj) {
+//     let finObj = subObj[subKey]
+//     for (let finKey in finObj) {
+//       sum += finObj[finKey];
+//     }
+//   }
+// }
+// console.log("sum", sum);
+
+// Task 102
+// Выведите на экран первого студента из третьей группы.
+// let students = {
+// 	'group1': ['name11', 'name12', 'name13'],
+// 	'group2': ['name21', 'name22', 'name23'],
+// 	'group3': ['name31', 'name32', 'name33'],
+// };
+// console.log(students['group3'][0])
+
+// Task 103
+// С помощью вложенных циклов выведите на экран все строки с данными.
+// let data = {
+// 	1: [
+// 		'data11',
+// 		'data12',
+// 		'data13',
+// 	],
+// 	2: [
+// 		'data21',
+// 		'data22',
+// 		'data23',
+// 	],
+// 	3: [
+// 		'data31',
+// 		'data32',
+// 		'data33',
+// 	],
+// 	4: [
+// 		'data41',
+// 		'data42',
+// 		'data43',
+// 	],
+// };
+// for(let dataBlock in data){
+//     for(let datas of data[dataBlock]){
+//         console.log(datas)
+//     }
+// }
+
+// Task 104
+// С помощью вложенных циклов выведите на экран все строки с данными.
+// let data = [
+// 	{
+// 		1: 'data11',
+// 		2: 'data12',
+// 		3: 'data13',
+// 	},
+// 	{
+// 		1: 'data21',
+// 		2: 'data22',
+// 		3: 'data33',
+// 	},
+// 	{
+// 		1: 'data31',
+// 		2: 'data32',
+// 		3: 'data33',
+// 	},
+// ];
+// for(let dataBlock of data){
+//     for(let datas in dataBlock){
+//         console.log(dataBlock[datas])
+//     }
+// }
+
+// Task 105
+// С помощью вложенных циклов выведите на экран все строки с данными.
+// let data = [
+//   {
+//     1: ["data111", "data112", "data113"],
+//     2: ["data121", "data122", "data123"],
+//   },
+//   {
+//     1: ["data211", "data212", "data213"],
+//     2: ["data221", "data222", "data223"],
+//   },
+//   {
+//     1: ["data411", "data412", "data413"],
+//     2: ["data421", "data422", "data423"],
+//   },
+// ];
+// for (let key in data) {
+//     let subData = data[key]
+//     for(let subKey in subData){
+//         let inData = subData[subKey]
+//         for(let innerData in inData){
+//             console.log(inData[innerData])
+//         }
+//     }
+// }
+
+// Task 106
+// Выведите на экран данные каждого работника в формате имя - зарплата.
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//   },
+// ];
+// for (let employee of employees) {
+//   console.log(employee.name + " - " + employee.salary);
+// }
+
+// Task 107
+// Выведите на экран сумму зарплат всех работников.
+// let sum = 0;
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//   },
+// ];
+// for(let employee of employees){
+//     sum += employee.salary
+// }
+// console.log(sum)
+
+// Task 108
+// Выведите на экран сумму зарплат тех работников, возраст которых равен или более 30 лет.
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//     age: 28,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//     age: 29,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//     age: 30,
+//   },
+//   {
+//     name: "name4",
+//     salary: 600,
+//     age: 31,
+//   },
+//   {
+//     name: "name5",
+//     salary: 700,
+//     age: 32,
+//   },
+// ];
+// let sum = 0;
+// for (let employee of employees) {
+//   if (employee.age >= 30) {
+//     sum += employee.salary
+//   }
+// }
+// console.log(sum);
+
+// Task 109
+// Дан следующий объект с названиями месяцев, Выведите на экран название месяца, соответствующее значениям переменных lang и month.
+// let months = {
+// 	'ru': [
+// 		'январь',
+// 		'февраль',
+// 		'март',
+// 		'апрель',
+// 		'май',
+// 		'июнь',
+// 		'июль',
+// 		'август',
+// 		'сентябрь',
+// 		'октябрь',
+// 		'ноябрь',
+// 		'декабрь',
+// 	],
+// 	'en': [
+// 		'january',
+// 		'february',
+// 		'march',
+// 		'april',
+// 		'may',
+// 		'june',
+// 		'july',
+// 		'august',
+// 		'september',
+// 		'october',
+// 		'november',
+// 		'december',
+// 	],
+// };
+// let lang = 'ru';
+// let month = 6;
+// console.log(months[lang][month - 1])
+
+// Task 110
+//  Дана вот такая структура для хранения списка дел за года, месяцы и дни: Пусть даны также три переменные, содержащие год, месяц и день. Выведите дело, соответствующее значениям переменных.
+// let affairs = {
+//   2018: {
+//     11: {
+//       29: ["дело111", "дело112", "дело113"],
+//       30: ["дело121", "дело122", "дело123"],
+//     },
+//     12: {
+//       30: ["дело211", "дело212", "дело213"],
+//       31: ["дело221", "дело222", "дело223"],
+//     },
+//   },
+//   2019: {
+//     12: {
+//       29: ["дело311", "дело312", "дело313"],
+//       30: ["дело321", "дело322", "дело323"],
+//       31: ["дело331", "дело332", "дело333"],
+//     },
+//   },
+// };
+// let year = 2019
+// let month = 12
+// let day = 31
+// console.log(affairs[year][month][day])
+
+// Task 111
+// Автор следующего кода хотел вывести элемент со значением '24':
+// let obj = {
+//   key1: {
+//     key2: "12",
+//     key3: "13",
+//   },
+//   key2: {
+//     key4: "24",
+//     key5: "25",
+//   },
+// };
+// console.log(obj.key2.key4);
+
+// Task 112
+// let obj = {
+//   key1: {
+//     key2: "12",
+//     key3: "13",
+//   },
+//   key2: {
+//     key4: "24",
+//     key5: "25",
+//   },
+// };
+
+// console.log(obj.key2.key4);
+
+// Task 113
+// let obj = {
+//   key1: {
+//     key2: "12",
+//     key3: "13",
+//   },
+//   key2: {
+//     key4: "24",
+//     key5: "25",
+//   },
+// };
+// console.log(obj.key2.key4);
+
+// Task 114
+// let obj = {
+//   key1: {
+//     key2: "12",
+//     key3: "13",
+//   },
+//   key2: {
+//     key4: "24",
+//     key5: "25",
+//   },
+// };
+// console.log(obj.key2.key4);
+
+// Task 115
+// Добавьте в следующий массив еще одного работника:
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//     age: 28,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//     age: 29,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//     age: 30,
+//   },
+// ];
+// console.log("employees", employees)
+// employees.push({ name: "name4", salary: 700, age: 31 });
+
+// Task 116
+// Добавьте еще одно дело в дату '2019-12-29'. Добавьте еще два дела в дату '2019-12-31'.
+// let affairs = {
+// 	'2019-12-28': ['data11', 'data12', 'data13'],
+// 	'2019-12-29': ['data21', 'data22', 'data23'],
+// 	'2019-12-30': ['data31', 'data32', 'data33'],
+// }
+// console.log("affairs", affairs)
+// affairs['2019-12-29'].push('data24')
+// affairs['2019-12-31'] = []
+// affairs['2019-12-31'].push('data34')
+// affairs['2019-12-31'].push('data35')
+
+// Task 117
+// Добавьте нового студента в подгруппу 'subgroup11'. Добавьте в первую группу еще одну подгруппу. Сделайте четвертую группу, в ней сделайте подгруппу и добавьте в нее двух новых студентов.
+// let students = {
+// 	'group1': {
+// 		'subgroup11': ['student111', 'student112', 'student113'],
+// 		'subgroup12': ['student121', 'student122', 'student123'],
+// 	},
+// 	'group2': {
+// 		'subgroup21': ['student211', 'student212', 'student213'],
+// 		'subgroup22': ['student221', 'student222', 'student223'],
+// 	},
+// 	'group3': {
+// 		'subgroup31': ['student311', 'student312', 'student313'],
+// 		'subgroup32': ['student321', 'student322', 'student323'],
+// 	},
+// };
+// students.group1.subgroup11.push('students114')
+// students.group1.subgroup13 = []
+// students.group4 = {}
+// students.group4.subgroup33 = []
+// students.group4.subgroup33.push('student324')
+// students.group4.subgroup33.push('student325')
+// console.log("students", students)
+
+// Task 118
+// Возведите 2 в 10 степень.
+// Math.pow(2, 10)
+// console.log("Math.pow(2, 10)", Math.pow(2, 10))
+
+// Task 119
+//
+
+// Task 120
+//
+
+// Task 121
+//
+
+// Task 122
+//
+
+// Task 123
+//
+
+// Task 124
+//
+
+// Task 125
+//
+
+// Task 126
+//
+
+// Task 127
+//
+
+// Task 128
+//
+
+// Task 129
+//
+
+// Task 130
+//
+
+// Task 131
+//
+
+// Task 132
+//
+
+// Task 133
+//
+
+// Task 134
+//
