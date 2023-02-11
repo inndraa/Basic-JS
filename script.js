@@ -2945,27 +2945,69 @@
 
 // Task 119
 // Найдите квадратный корень из 245.
+// Math.sqrt(245)
+// console.log("Math.sqrt(245)", Math.sqrt(245))
 
 // Task 120
-//
+// Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
+// let arr = [4, 2, 5, 19, 13, 0, 10];
+// let sum = 0;
+// for(let num of arr){
+//     sum += Math.pow(num, 3)
+// }
+// console.log("num", Math.sqrt(sum))
 
 // Task 121
-//
+// Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
+// let num = 379;
+// let sqrtRes = Math.sqrt(num)
+// let final1 = Math.round(sqrtRes)
+// let final2 = sqrtRes.toFixed(1)
+// let final3 = sqrtRes.toFixed(2)
+// console.log("final1", final1)
+// console.log("final2", final2)
+// console.log("final3", final3)
 
 // Task 122
-//
+// Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, запишите результаты округления в объект с ключами 'floor' и 'ceil'.
+// let num = 587;
+// let sqrtRes = Math.sqrt(num);
+// let resFloor = Math.floor(sqrtRes);
+// let resCeil = Math.ceil(sqrtRes);
+// let obj = {};
+// obj.floor = [];
+// obj.ceil = [];
+// obj.floor.push(resFloor);
+// obj.ceil.push(resCeil);
+// console.log("obj", obj);
 
 // Task 123
-//
+// Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число.
+// let maxNum = Math.max(4, -2, 5, 19, -130, 0, 10)
+// let minNum = Math.min(4, -2, 5, 19, -130, 0, 10);
+// console.log("minNum", minNum)
+// console.log("maxNum", maxNum)
 
 // Task 124
-//
+// Выведите на экран случайное целое число от 1 до 100.
+// let num = Math.floor(Math.random() * (100 - 1)) + 1
+// console.log("num", num)
 
 // Task 125
-//
+// С помощью цикла заполните массив 10-ю случайными целыми числами.
+// let arr = []
+// for(let i = 0; i < 10; i++){
+//     arr[i] = Math.floor(Math.random() * (100 - 1)) + 1
+// }
+// console.log(arr)
 
 // Task 126
-//
+// Даны переменные a и b. Найдите модуль разности a и b. Проверьте работу скрипта самостоятельно для различных a и b.
+// let a = 13;
+// let b = 21;
+// let res = a - b;
+// Math.abs(res)
+// console.log("Math.abs(res)", Math.abs(res))
 
 // Task 127
 //
