@@ -3010,25 +3010,175 @@
 // console.log("Math.abs(res)", Math.abs(res))
 
 // Task 127
-//
+// Дана строка 'js'. Сделайте из нее строку 'JS'.
+// let str = "js";
+// console.log(str.toUpperCase());
 
 // Task 128
-//
+// Дана строка 'JS'. Сделайте из нее строку 'js'.
+// let str = "JS";
+// console.log(str.toLowerCase());
 
 // Task 129
-//
+// Дана строка 'я учу javascript!'. Вырежьте из нее слово 'учу' и слово 'javascript' тремя разными способами (через substr, substring, slice).
+// let str = "я учу javascript!";
+// let subStr = str.substr(1, 4);
+// let stringStr = str.substring(1, 5);
+// let sliceStr = str.slice(1, 5)
+// console.log("sliceStr", sliceStr)
+// console.log("stringStr", stringStr)
+// console.log("subStr", subStr);
 
 // Task 130
-//
+// Дана строка 'abcde'. Определите позицию буквы 'c' в этой строке.
+// let str = "acbde";
+// console.log(str.indexOf('c'))
 
 // Task 131
-//
+// Дана строка. Проверьте, есть ли в этой строке символ 'a'.
+// let str = "acbde";
+// let strSub = str.substring(0, str.length)
+// let strItem = strSub.indexOf("a");
+// str[strItem] == "a" ? console.log("true") : "";
 
 // Task 132
-//
+// Дана строка. Проверьте, начинается ли эта строка с символа 'a'.
+// let str = "acbde";
+// str[0] == "a" ? console.log("begins with a") : "";
 
 // Task 133
-//
+// Дана строка. Проверьте, заканчивается ли эта строка на символ 'a'.
+// let str = "acbdesdfgdfgsdfgdfg";
+// str[str.length - 1] == "a" ? console.log("true") : "";
 
 // Task 134
-//
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+// let str = "http://google.com";
+// let strSliced = str.slice(0, 7);
+// if(strSliced == 'http://'){
+//     console.log('yes')
+// } else{
+//     console.log('none')
+// }
+
+// Task 135
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'
+// let str = "index.html";
+// let strIndex = str.lastIndexOf(".html");
+// let strSubstr = str.substring(0, strIndex);
+// let strSliced = str.slice(strIndex, str.length);
+// strSliced == ".html" ? console.log("true") : "";
+
+// Task 136
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+// let str = "http://google.com";
+// console.log(str.startsWith('http://'))
+
+// Task 137
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'.
+// let str = "index.html";
+// console.log(str.endsWith('.html'))
+
+// Task 138
+// Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива.
+// let str = "1-2-3-4-5";
+// let arr = str.split('-')
+// console.log("arr", arr)
+
+// Task 139
+// Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+// let str = "12345";
+// let arr = str.split('')
+// console.log("arr", arr)
+
+// Task 140
+// С помощью метода join слейте его в строку '1-2-3-4-5'.
+// let arr = [1, 2, 3, 4, 5];
+// let str = arr.join('-')
+// console.log("str", str)
+
+// Task 141
+// Добавьте ему в конец элементы 4, 5, 6.
+// let arr = [1, 2, 3];
+// arr.push(4, 5, 6);
+// console.log("arr", arr)
+
+// Task 142
+// Добавьте ему в начало элементы 4, 5, 6.
+// let arr = [1, 2, 3];
+// arr.unshift(4, 5, 6);
+// console.log("arr", arr)
+
+// Task 143
+// Выведите на экран первый элемент этого массива.
+// let arr = [1, 2, 3];
+// let arrItem = arr.shift();
+// console.log("arrItem", arrItem);
+
+// Task 144
+// Выведите на экран последний элемент этого массива.
+// let arr = [1, 2, 3];
+// let arrItem = arr.pop();
+// console.log("arrItem", arrItem)
+
+// Task 145
+// Сделайте из этого массива следующий:
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(0, 3);
+// console.log("newArr", newArr)
+
+// Task 146
+// Используя этот массив, запишите в новую переменную следующий массив:
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(3, 5);
+// console.log("newArr", newArr)
+
+// Task 147
+// С помощью метода splice преобразуйте массив в следующий:
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.splice(1, 2);
+// console.log("newArr", arr);
+
+// Task 148
+// С помощью метода splice сделайте из него массив:
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(2, 0, "a", "b", "c");
+// console.log("arr", arr);
+
+// Task 149
+// С помощью метода splice сделайте из него массив:
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 0, "a", "b");
+// arr.splice(5, 0, "c");
+// arr.splice(7, 0, "e");
+// console.log("arr", arr);
+
+// Task 150
+// Найдите позицию числа 3 в этом массиве.
+// let arr = [1, 2, 3, 4, 5];
+// let arrIndex = arr.indexOf(3)
+// console.log("arrIndex", arrIndex)
+
+// Task 151
+// Проверьте, есть ли в этом массиве число 3.
+// let arr = [1, 2, 3, 4, 5];
+// let res = arr.includes(3)
+// console.log("res", res)
+
+// Task 152
+// Преобразуйте последнюю букву строки в верхний регистр.
+// let str = "london";
+// let result = str.slice(0, 5) + str.slice(5).toUpperCase();
+// console.log("result", result);
+
+// Task 153
+// Преобразуйте первые 2 буквы строки в верхний регистр.
+
+
+// Task 154
+// Пусть дана строка, у которой первая буква в верхнем регистре, например вот такая: Преобразуйте первую букву строки в нижний регистр.
+
+
+// Task 155
+// Самостоятельно, не подсматривая в мой код, повторите мое решение описанной задачи.
+
